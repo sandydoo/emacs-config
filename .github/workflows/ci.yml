@@ -23,9 +23,9 @@ jobs:
 
       - uses: cachix/cachix-action@feature/daemon
         with:
-          name: terlar
+          name: cachix-test
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-          extraPullNames: nix-community
+          extraPullNames: nix-community,terlar
           useDaemon: true
 
       - name: Check
@@ -44,9 +44,9 @@ jobs:
 
       - uses: cachix/cachix-action@feature/daemon
         with:
-          name: terlar
+          name: cachix-test
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-          extraPullNames: nix-community
+          extraPullNames: nix-community,terlar
           useDaemon: true
 
       - name: Check
@@ -68,9 +68,9 @@ jobs:
 
       - uses: cachix/cachix-action@feature/daemon
         with:
-          name: terlar
+          name: cachix-test
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-          extraPullNames: nix-community
+          extraPullNames: nix-community,terlar
           useDaemon: true
 
       - name: Build default package
